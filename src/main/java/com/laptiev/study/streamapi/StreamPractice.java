@@ -7,7 +7,6 @@ import lombok.ToString;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -29,7 +28,7 @@ public class StreamPractice {
 
     public static void task1() {
         //take elements (employees) from list
-        //select those, who is younger then 40,
+        //select those, who is younger than 40,
         //sort by last name
         //and put into new list
 
@@ -107,7 +106,11 @@ public class StreamPractice {
 
     public static void task4() {
         //method should take list of ints
-        //and return map, that has 2 entrySets: {"unique"=List<Integer> uniqueElements, "duplicates"=List<Integer> duplicateElements}
+        //and return map, that has 2 entrySets:
+        //{
+        // "unique"=List<Integer> uniqueElements,
+        // "duplicates"=List<Integer> duplicateElements
+        // }
         //lists should be sorted
 
         //List<Integer> initialList = Arrays.asList(1, 2, 3, 1, 9, 2, 5, 3, 4, 8, 2);
@@ -143,7 +146,7 @@ public class StreamPractice {
         System.out.println("duplicateElements=" + duplicateElements);
 
 
-        Map<String,List<Integer>> result = new HashMap<>();
+        Map<String, List<Integer>> result = new HashMap<>();
         result.put("unique", uniqueElements);
         result.put("duplicates", duplicateElements);
 

@@ -31,7 +31,7 @@ public class Lesson2IntermediateOperators {
         System.out.println("=================================");
 
 
-        //.filter(x -> Collections.frequency(initialList, x) > 1) - filters if element is present more then ones
+        //.filter(x -> Collections.frequency(initialList, x) > 1) - filters if element is present more than ones
         List<Integer> initialList = Arrays.asList(1, 2, 3, 1, 9, 2, 5, 3, 4, 8, 2);
         initialList.stream()
                 .filter(x -> Collections.frequency(initialList, x) > 1)

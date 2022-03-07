@@ -35,7 +35,7 @@ public class Lesson3TerminalOperators {
 
 //-----------------------collect(Collectors.toMap(Function keyMapper, Function valueMapper)
 
-        //method collects stream into Map.Each elements transforms into key and value according to Function keyMapper, Function valueMapper
+        //method collects stream into Map.Each element transforms into key and value according to Function keyMapper, Function valueMapper
         //Function.identity() returns initial element
         //{1=1, 2=2, 3=3, 4=4, 5=5}
         Map<Integer, Integer> map = Stream.of(1, 2, 3, 4, 5)
@@ -57,7 +57,7 @@ public class Lesson3TerminalOperators {
 //-----------------------collect(Collectors.groupingBy(x->x.getCourse()))
 
         //method collects stream into Map (groups String elements by String element length).
-        //Each elements transforms into (key,value)=(length,List<String>elements)
+        //Each element transforms into (key,value)=(length,List<String>elements)
         Map<Integer,List<String>> resultMap = Stream.of("One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten")
                 .collect(Collectors.groupingBy(x->x.length()));
         System.out.println(resultMap);

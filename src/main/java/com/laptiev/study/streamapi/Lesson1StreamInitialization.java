@@ -225,7 +225,7 @@ public class Lesson1StreamInitialization {
 
 
 //-------------------------------------stream iterate(T seed, UnaryOperator f)-----------------------------------
-        //method generates stream with 10 elements and prints it. First element = seed. Second element = f(seed). Third element = f(f(seed))
+        //method generates stream with 6 elements and prints it. First element = seed. Second element = f(seed). Third element = f(f(seed))
         //3,6,12,24,48,96
         Stream.iterate(3, x -> x * 2)
                 .limit(6)
